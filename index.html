@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <meta charset="utf-8">
+    <title>Form Progress Report</title>
+    <link rel="stylesheet" media="screen" href="style.css" >
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1" action="upload.php" method="post" enctype="multipart/form-data">
+      
+      <h2 align="center"><b>HARAP MEMASUKKAN DATA DENGAN BENAR</b></h2>
+      <p class="field">
+        <input name="nama" type="text" class="validate[required] feedback-input" placeholder="Nama (ex: hary)" id="nama" />
+      </p>
+      
+      <p class="field">
+        <input name="fase" type="text" class="validate[required] feedback-input" placeholder="Fase (ex: 1)" id="fase" />
+      </p>
+
+      <p class="field">
+        <input name="kategori" type="text" class="validate[required] feedback-input" placeholder="Kategori (ex: 1)" id="kategori" />
+      </p>
+      
+      <p class="field">
+        <input name="kav" type="text" class="validate[required] feedback-input" placeholder="No. Kavling (ex: 222)" id="kav" />
+      </p>
+
+      <p>
+        <input type="file" name="gambar" class="validate[required]" id="gambar"/>
+      </p>
+
+      <p class="text">
+        <textarea name="keterangan" type="text" id="keterangan" placeholder="Keterangan (Opsinal)"></textarea>
+      </p>
+            
+      <div class="submit">
+        <input type="submit" value="SEND" name="submit" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+  </body>
+  </html>
