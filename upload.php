@@ -7,7 +7,7 @@ $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
     // Simpan ke database
-    $sql = "insert into simpan (nama, fase, kategori, kavling, gambar, keterangan) values ('".$_POST['nama']."', '".$_POST['fase']."', '".$_POST['kategori']."',  '".$_POST['kav']."', '$target_file', '".$_POST['keterangan']."')";
+    $sql = "insert into simpan (nama_pengawas, fase, kategori, no_kav, gambar, keterangan) values ('".$_POST['nama']."', '".$_POST['fase']."', '".$_POST['kategori']."',  '".$_POST['kav']."', '$target_file', '".$_POST['keterangan']."')";
     mysql_query($sql);
     $check = getimagesize($_FILES["gambar"]["tmp_name"]);
     if($check !== false) {
